@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Neumorph">
+      <div className="Neumorph-Project">
+        <p className="Neumorph-Title">My Neumorph Playground</p>
+        <p className="Neumorph-Description">by al-Serembani</p>
+      </div>
+      <div className="Neumorph-Wrapper">
+        <div className="Neumorph-Element Neumorph-Outside">Outside Shadow</div>
+        <div className="Neumorph-Element Neumorph-Inside">Inside Shadow</div>
+        <div className="Neumorph-Element Neumorph-Outside-Hover">Hover Transition</div>
+        <div className="Neumorph-Element Neumorph-Outside-After">Hover Animation</div>
+      </div>
     </div>
   );
 }
