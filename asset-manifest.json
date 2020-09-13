@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/neumorph/static/css/main.19e177c2.chunk.css",
+    "main.css": "/neumorph/static/css/main.c0aafb96.chunk.css",
     "main.js": "/neumorph/static/js/main.c60d198f.chunk.js",
     "main.js.map": "/neumorph/static/js/main.c60d198f.chunk.js.map",
     "runtime-main.js": "/neumorph/static/js/runtime-main.1f6fc0b2.js",
@@ -8,15 +8,15 @@
     "static/js/2.d0c084f7.chunk.js": "/neumorph/static/js/2.d0c084f7.chunk.js",
     "static/js/2.d0c084f7.chunk.js.map": "/neumorph/static/js/2.d0c084f7.chunk.js.map",
     "index.html": "/neumorph/index.html",
-    "precache-manifest.5f329fc2d1dc01e9ba9e942b02578d8d.js": "/neumorph/precache-manifest.5f329fc2d1dc01e9ba9e942b02578d8d.js",
+    "precache-manifest.5eb9177ee607e18408f520856558f6ac.js": "/neumorph/precache-manifest.5eb9177ee607e18408f520856558f6ac.js",
     "service-worker.js": "/neumorph/service-worker.js",
-    "static/css/main.19e177c2.chunk.css.map": "/neumorph/static/css/main.19e177c2.chunk.css.map",
+    "static/css/main.c0aafb96.chunk.css.map": "/neumorph/static/css/main.c0aafb96.chunk.css.map",
     "static/js/2.d0c084f7.chunk.js.LICENSE.txt": "/neumorph/static/js/2.d0c084f7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1f6fc0b2.js",
     "static/js/2.d0c084f7.chunk.js",
-    "static/css/main.19e177c2.chunk.css",
+    "static/css/main.c0aafb96.chunk.css",
     "static/js/main.c60d198f.chunk.js"
   ]
 }
