@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/neumorph/static/css/main.c0aafb96.chunk.css",
-    "main.js": "/neumorph/static/js/main.c60d198f.chunk.js",
-    "main.js.map": "/neumorph/static/js/main.c60d198f.chunk.js.map",
+    "main.css": "/neumorph/static/css/main.37fe77f6.chunk.css",
+    "main.js": "/neumorph/static/js/main.c2e12842.chunk.js",
+    "main.js.map": "/neumorph/static/js/main.c2e12842.chunk.js.map",
     "runtime-main.js": "/neumorph/static/js/runtime-main.1f6fc0b2.js",
     "runtime-main.js.map": "/neumorph/static/js/runtime-main.1f6fc0b2.js.map",
-    "static/js/2.d0c084f7.chunk.js": "/neumorph/static/js/2.d0c084f7.chunk.js",
-    "static/js/2.d0c084f7.chunk.js.map": "/neumorph/static/js/2.d0c084f7.chunk.js.map",
+    "static/js/2.c26c85fe.chunk.js": "/neumorph/static/js/2.c26c85fe.chunk.js",
+    "static/js/2.c26c85fe.chunk.js.map": "/neumorph/static/js/2.c26c85fe.chunk.js.map",
     "index.html": "/neumorph/index.html",
-    "precache-manifest.5eb9177ee607e18408f520856558f6ac.js": "/neumorph/precache-manifest.5eb9177ee607e18408f520856558f6ac.js",
+    "precache-manifest.a62d0e044f413b620154192ee60a14b7.js": "/neumorph/precache-manifest.a62d0e044f413b620154192ee60a14b7.js",
     "service-worker.js": "/neumorph/service-worker.js",
-    "static/css/main.c0aafb96.chunk.css.map": "/neumorph/static/css/main.c0aafb96.chunk.css.map",
-    "static/js/2.d0c084f7.chunk.js.LICENSE.txt": "/neumorph/static/js/2.d0c084f7.chunk.js.LICENSE.txt"
+    "static/css/main.37fe77f6.chunk.css.map": "/neumorph/static/css/main.37fe77f6.chunk.css.map",
+    "static/js/2.c26c85fe.chunk.js.LICENSE.txt": "/neumorph/static/js/2.c26c85fe.chunk.js.LICENSE.txt",
+    "static/media/logo-alserembani.svg": "/neumorph/static/media/logo-alserembani.ccece5b3.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1f6fc0b2.js",
-    "static/js/2.d0c084f7.chunk.js",
-    "static/css/main.c0aafb96.chunk.css",
-    "static/js/main.c60d198f.chunk.js"
+    "static/js/2.c26c85fe.chunk.js",
+    "static/css/main.37fe77f6.chunk.css",
+    "static/js/main.c2e12842.chunk.js"
   ]
 }
