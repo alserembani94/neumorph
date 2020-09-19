@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d60054db3422c538d59d8f51c95c3289",
+    "revision": "c1708c5753173b119554e4af0fadacd3",
     "url": "/neumorph/index.html"
   },
   {
-    "revision": "c4a92aacad05e73690b5",
+    "revision": "256c63b729b84fe005ca",
     "url": "/neumorph/static/css/main.37fe77f6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/neumorph/static/js/2.c26c85fe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c4a92aacad05e73690b5",
-    "url": "/neumorph/static/js/main.c2e12842.chunk.js"
+    "revision": "256c63b729b84fe005ca",
+    "url": "/neumorph/static/js/main.ddb42138.chunk.js"
   },
   {
     "revision": "46a26c6ea2209a437625",
