@@ -6,29 +6,185 @@
 }
 
 :root {
-  --base-background: #1982C4;
-  --foreground-color: #D1E6F3;
-  --dark-shadow-outside: 4px 4px 6px #14689DFF;
-  --light-shadow-outside: -4px -4px 6px #308FCAFF;
-  color: var(--foreground-color);
+  // DIMENSION SETTING
+  --header-width: 3.5rem;
+
+  // COLOR SETTING
+  --base-background: #E5ECE9;
+  --foreground-dark-color: #2D3047;
+  --secondary-color: #419D78;
+  --tertiary-color: #FF4A1C;
+  --quarternary-color: #EC9A29;
+  --foreground-light-color: #FFF;
+  --blur-background-color: #2D304799;
+
+  // OTHER SETTING
+  --dark-shadow-outside: 4px 4px 6px #B7BDBAFF;
+  --light-shadow-outside: -4px -4px 6px #F7F9F8FF;
+  --menu-padding: 5rem 4rem;
+
+  // DEFAULT SETTING
   font-size: 16px;
+  color: var(--foreground-dark-color);
+
 }
 
-@media (max-width: 768px) {
-  :root {
-    font-size: 12px;
+button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+    // border-bottom: 1px solid #00000066;
+    // box-shadow: inset 1px 1px 2px 1px #00000033, inset -1px -1px 2px 1px #FFFFFF33;
+    // transition: all 0.2s ease-in-out;
   }
 }
 
-.Neumorph {
-  width: 100vw;
-  height: 100vh;
+.Icon {
+  transition: all 0.2s ease-in-out;
+  &-Light {
+    color: var(--foreground-light-color);
+  }
+  &-Tertiary {
+    color: var(--tertiary-color);
+  }
+  &-Menu {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
   display: flex;
+  padding: 20px;
   background-color: var(--base-background);
+}
+
+header {
+  width: var(--header-width);
+  height: 100%;
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 1.2rem 0.5rem;
+  color: var(--foreground-light-color);
+  position: sticky;
+  top: 0px;
+  z-index: 1001;
+}
+
+.Header {
+  &-MenuButton {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    border-radius: 50%;
+    &:hover {
+      .Icon {
+        transform: rotate(90deg);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}
+
+.Layout {
+  &-Wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+  }
+  &-Body {
+    height: 100%;
+    width: calc(100% - var(--header-width));
+  }
+}
+
+.Menu {
+  &-Wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--blur-background-color);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    &[data-visible=true] {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+    &[data-visible=false] {
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+  }
+  &-Container {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--foreground-dark-color);
+    color: var(--foreground-light-color);
+    position: absolute;
+    height: 100vh;
+    width: fit-content;
+    padding: var(--menu-padding);
+    z-index: 1000;
+    &[data-visible=true] {
+      left: var(--header-width);
+      transition: left 0.5s ease-in-out;
+    }
+    &[data-visible=false] {
+      left: -50vw;
+      transition: left 0.5s ease-in-out;
+    }
+  }
+  &-Logo {
+    width: 10rem;
+    height: 6rem;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: left;
+    }
+  }
+  &-Drawer {
+    display: flex;
+    flex-flow: column wrap;
+    border-top: 1px solid var(--foreground-light-color);
+    border-bottom: 1px solid var(--foreground-light-color);
+    padding: 20px 0px;
+  }
+  &-Button {
+    font-size: 1.2rem;
+    color: var(--foreground-light-color);
+    margin-bottom: 10px;
+    border-radius: 1.2rem;
+    // padding: 10px 0px;
+    // justify-content: flex-start;
+  }
+}
+
+.Home {
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
-  padding: 20px;
 
   &-Project {
     display: flex;
@@ -45,8 +201,17 @@
 
   &-Description {
     font-size: 1rem;
+    background: var(--secondary-color);
+    color: var(--base-background);
+    padding: 3px 15px;
+    margin-top: 10px;
+    width: 50%;
+    min-width: min-content;
+    text-align: center;
   }
+}
 
+.Neumorph {
   &-Wrapper {
     max-width: 500px;
     display: flex;
@@ -77,6 +242,7 @@
 
     &-Hover {
       box-shadow: var(--dark-shadow-outside), var(--light-shadow-outside);
+      cursor: pointer;
       &:hover {
         box-shadow: inset var(--dark-shadow-outside), inset var(--light-shadow-outside);
         // transition: box-shadow 0.3s ease-in-out;
@@ -86,6 +252,7 @@
 
     &-After {
       background: var(--base-background);
+      cursor: pointer;
       border-radius: 40px;
       position: relative;
       &:before {
@@ -126,4 +293,46 @@
   &-Inside {
     box-shadow: inset var(--dark-shadow-outside), inset var(--light-shadow-outside);
   }
+}
+
+.NotFound {
+  &-Screen {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &-Title {
+    display: flex;
+    flex-flow: row wrap;
+    height: 6rem;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    box-shadow: inset var(--dark-shadow-outside), inset var(--light-shadow-outside);
+    p {
+      margin: 0px 3ch;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .Icon {
+      width: 3rem;
+      height: 3rem;
+      animation: blinking-icon 2s infinite ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@keyframes blinking-icon {
+  20% { opacity: 0 }
+  30% { opacity: 1 }
+  70% { opacity: 1 }
+  80% { opacity: 0 }
 }
