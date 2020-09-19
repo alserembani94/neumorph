@@ -15,7 +15,7 @@ import NotFound from '../pages/404';
 
 const routes = [
     {
-        path: "/",
+        path: "/neumorph/",
         exact: true,
         main: () => <Home />
     },

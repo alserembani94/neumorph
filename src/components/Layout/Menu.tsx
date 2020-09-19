@@ -13,19 +13,19 @@ interface MenuProps {
 
 const menuNav = [
     {
-        path: '/',
+        path: '/neumorph/',
         label: 'Home',
     },
     {
-        path: '/about',
+        path: '/neumorph/about',
         label: 'About',
     },
     {
-        path: '/projects',
+        path: '/neumorph/projects',
         label: 'Projects',
     },
     {
-        path: '/contact',
+        path: '/neumorph/contact',
         label: 'Finding Me?',
     },
 ];
