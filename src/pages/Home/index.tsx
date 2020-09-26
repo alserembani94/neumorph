@@ -3,7 +3,7 @@ import React from 'react';
 const HomeScreen = () => {
     return (
         <React.Fragment>
-            <main className="Home">
+            <main className="Home-Screen">
                 <div className="Home-Project">
                     <p className="Home-Title">My Home Playground</p>
                     <p className="Home-Description">by al-Serembani</p>

@@ -11,9 +11,27 @@ import {
 
 // Importing all main pages
 import Home from '../pages/Home';
+import AboutUs from '../pages/AboutUs';
+import DesignSystem from '../pages/DesignSystem';
 import NotFound from '../pages/404';
+import InProgress from '../pages/InProgress';
 
 const routes = [
+    {
+        path: "/neumorph/about",
+        exact: true,
+        main: () => <AboutUs />
+    },
+    {
+        path: "/neumorph/design-system",
+        exact: true,
+        main: () => <DesignSystem />
+    },
+    {
+        path: "/neumorph/contact-me",
+        exact: true,
+        main: () => <InProgress />
+    },
     {
         path: "/neumorph/",
         exact: true,

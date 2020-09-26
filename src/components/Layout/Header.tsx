@@ -8,14 +8,17 @@ import Menu from './Menu';
 const Header: React.FC = () => {
     const [toggleMenu, setToggleMenu] = React.useState<boolean>(false);
 
-    const handleMenuVisibility = () => {
-        setToggleMenu(prevState => { return !prevState });
-    };
+    // const handleMenuVisibility = () => {
+    //     setToggleMenu(prevState => { return !prevState });
+    // };
+
+    const handleOpenMenu = () => setToggleMenu(() => true);
+    const handleCloseMenu = () => setToggleMenu(() => false);
 
     return (
         <React.Fragment>
             <header>
-                <button className="Header-MenuButton" onClick={handleMenuVisibility}>
+                <button className="Header-MenuButton" onClick={toggleMenu ? handleCloseMenu : handleOpenMenu}>
                     <IconContext.Provider value={{ className: 'Icon Icon-Light Icon-Menu' }}>
                         <IoIosMenu />
                     </IconContext.Provider>
@@ -23,7 +26,7 @@ const Header: React.FC = () => {
             </header>
             <Menu
                 visible={toggleMenu}
-                toggleVisibility={handleMenuVisibility}
+                closeModal={handleCloseMenu}
             />
         </React.Fragment>
     );
