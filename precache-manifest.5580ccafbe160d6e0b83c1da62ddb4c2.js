@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2e16207ed9f80b94745418fe832fbb4b",
+    "revision": "0cf9988b7c08153588d4427dfb635332",
     "url": "/neumorph/index.html"
   },
   {
